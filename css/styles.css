@@ -5,11 +5,11 @@
 .c3,.c4 {
     height: 100%;
     width: 80%;
-    padding-left: -2%; 
+     
 }
 #row1, #row2, #row3, #row4, #row5, #row6{
     padding-bottom: 2%;
-    /* padding-right: 5%; */
+    padding-right: 5%;
 }
 .s1,.s2,.s3,.s4{
     height: 100%;
