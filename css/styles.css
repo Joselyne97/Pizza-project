@@ -7,11 +7,41 @@
     width: 80%;
      
 }
-#row1, #row2, #row3, #row4, #row5, #row6{
+#row1, #row2, #row3, #row4, #row5, #row6, #glu1,#glu,#top, #top1{
     padding-bottom: 2%;
     padding-right: 5%;
 }
 .s1,.s2,.s3,.s4{
     height: 100%;
     width: 80%;
+}
+.g1,.g2,.g3,.g4{
+    height: 100%;
+    width: 80%;
+}
+.t1{
+    height: 100%;
+    width: 100%;
+
+}
+.t2{
+    height: 100%;
+    width: 100%;
+}
+.t3{
+    height: 100%;
+    width: 100%;
+}
+.t4{
+    padding-top: 3%;
+    height: 60%;
+    width: 100%;
+}
+.t5{
+    height: 60%;
+    width: 100%;
+}
+.t6{
+    height: 60%;
+    width: 100%;
 }
