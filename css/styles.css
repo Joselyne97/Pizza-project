@@ -1,0 +1,17 @@
+.c1,.c2{
+    height: 100%;
+    width: 80%;
+}
+.c3,.c4 {
+    height: 100%;
+    width: 80%;
+    padding-left: -2%; 
+}
+#row{
+    padding-bottom: 3%;
+    /* padding-right: 5%; */
+}
+.s1,.s2,.s3,.s4{
+    height: 100%;
+    width: 80%;
+}
