@@ -61,4 +61,10 @@ h1{
     background-color: black;
     font-family:Courier New;
 }
+#top1 h6{
+    margin-left: 70px;
+}
+#top1 p{
+    margin-left: 50px;
+}
 
