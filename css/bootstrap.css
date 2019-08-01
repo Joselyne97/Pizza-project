@@ -1862,8 +1862,8 @@ pre code {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #495057;
-  background-color: #fff;
+  color: #F5F5DC;
+  background-color: black;
   background-clip: padding-box;
   border: 1px solid #ced4da;
   border-radius: 0.25rem;
@@ -1882,20 +1882,20 @@ pre code {
 }
 
 .form-control:focus {
-  color: #495057;
-  background-color: #fff;
-  border-color: #80bdff;
+  color:#F5F5DC;
+  background-color: black;
+  border-color: yellowgreen;
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  box-shadow:transparent;
 }
 
 .form-control::-webkit-input-placeholder {
-  color: #6c757d;
-  opacity: 1;
+  color: #F5F5DC;
+  opacity: 0;
 }
 
 .form-control::-moz-placeholder {
-  color: #6c757d;
+  color: #F5F5DC;
   opacity: 1;
 }
 
@@ -2344,7 +2344,7 @@ textarea.form-control {
   }
   .form-inline .input-group,
   .form-inline .custom-select {
-    width: auto;
+    width: 100px;
   }
   .form-inline .form-check {
     display: -ms-flexbox;
