@@ -96,8 +96,10 @@
      </div>
      <div class="row" id="selection">
          <div class="col-md-5">
+                
                     <form>
-                        
+                            <div id="new-order">
+                                    <div class="new-order">
                                     <label for="sel">Select the Crust</label>
 
                             <select class="form-control" id="sel">
@@ -129,9 +131,15 @@
                                 
                                     <label for="sel">Select the number of pizza you want</label>
                                     <input type="number" class="form-control" id="nbr" min="1"> <br><br>
+                    </div>
+                </div>
+                                    <span class="btn btn-primary" id="add-order">Another order</span>
                                     <button type="submit" class="btn-primary">Order</button><br><br><br>
                             </form>
-
+                            <h2>What you ordered:</h2>
+                            <ul id="ordered">
+                  
+                            </ul>
          </div>
 
 
