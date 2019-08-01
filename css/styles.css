@@ -1,4 +1,9 @@
-#top, #top1{
+
+.at{
+    height: 60%;
+    width: 50%;
+}
+#top, #top1, #top4{
     padding-bottom: 2%;
     padding-right: 5%;
 }
@@ -16,7 +21,6 @@
     width: 100%;
 }
 .t4{
-    padding-top: 3%;
     height: 60%;
     width: 100%;
 }
@@ -25,10 +29,36 @@
     width: 100%;
 }
 .t6{
-    height: 60%;
+    height:60%;
     width: 100%;
 }
 h1{
-    color: brown;
     margin-left: 200px;
+
 }
+.about{
+    margin-left: 100px;
+    margin-bottom: 50px;
+    /* background-color: black;
+    color: blanchedalmond; */
+}
+.about h2{
+    margin-left: 150px;
+    margin-top: 50px;
+}
+.instr{
+    margin-left: 400px;
+    margin-bottom: 50px;
+}
+.instr h3{
+    margin-left: 90px;
+}
+.line4{
+    top: 100px;
+}
+*{
+    color: #F5F5DC;
+    background-color: black;
+    font-family:Courier New;
+}
+
