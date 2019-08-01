@@ -31,4 +31,5 @@ $(document).ready(function() {
               '<input type="number" class="form-control" id="nbr" min="1">' + '<br>' + '<br>' );
 
     });
+    
 });
