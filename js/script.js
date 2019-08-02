@@ -30,7 +30,7 @@ function Order(crust, topping, size, number, delivery) {
       $("select#delivery").val();
     $(".order").last().click(function() {
       $("#show-order").show();
-      $("#show-order h2").text(newOrder.crust);
+      $("#show-order h2").text(newOrder.delivery);
       $(".crust").text(newOrder.crust);
       $(".topping").text(newOrder.topping);
       $(".size").text(newOrder.size);
