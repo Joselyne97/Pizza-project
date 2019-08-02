@@ -130,31 +130,43 @@
                                     </select><br><br>
                                 
                                     <label for="nbr">Select the number of pizza you want</label>
-                                    <input type="number" class="form-control" id="nbr" min="1"> <br><br>
+
+                                    <input type="number" class="form-control" id="nbr" min="1" placeholder="Number of pizza"><br><br>
+                                    <label for="delivery">will be deliveried or not</label>
+
+                            <select class="form-control" id="delivery">
+                                     <option selected>choose...</option>
+                                      <option value="delivery">Delivery</option>
+                                      <option value="not">Pick up</option>
+                            </select><br><br>
+                            
                     </div>
                 </div>
                                     <span class="btn btn-primary" id="add-order">Another order</span><br><br>
-                                    <button type="submit" class="btn-primary">Order</button><br><br><br>
+                                    <button type="submit" class="btn btn-primary">Order</button><br><br><br>
                             </form>
                             <h2>What you ordered:</h2>
-                            <ul id="ordered">
+                            <ul id="orders">
                   
                             </ul>
          </div>
+     </div><br><br><br>
+     <div class="col-md-6">
+            <div id="show-order">
+              <h2>What you have ordered are with the total price:</h2>
+              <p>Crust: <span class="crust"></span></p>
+              <p>Topping(s) of pizza: <span class="topping"></span></p>
+              <p>Size of pizza: <span class="size"></span></p>
+              <p>Number of pizza(s): <span class="number"></span></p>
+              <p>Delivery: <span class="delivery"></span></p>
+              <p>Second order:</p>
+              <ul id="order2">
 
-
-         <div class="col-md-6">
-                <div id="show-order">
-                  <h2></h2>
-                  <p>First name: <span class="first-name"></span></p>
-                  <p>Last name: <span class="last-name"></span></p>
-                  <p>Addresses:</p>
-                  <ul id="addresses">
-      
-                  </ul>
-                </div>
-              </div>
-     </div>
+              </ul>
+              
+  
+            </div>
+          </div>
            
 </div>
 <script src="js/jquery-3.4.1.js"></script>

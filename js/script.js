@@ -1,9 +1,15 @@
-function Order(crust, topping, size, number) {
+function Order(crust, topping, size, number, delivery) {
     this.crust = crust;
     this.topping = topping;
     this.size = size;
     this.number = number;
+    this.delivery = delivery;
   }
+  
+  Order.prototype.fullOrder = function(){
+      return this.crust + " " + this.topping + " " + " " + this.size + " " + this.number + " "+ this.delivery;
+  }
+
   $(document).ready(function() {
     $("form#ordering").submit(function(event) {
       event.preventDefault();
@@ -11,11 +17,32 @@ function Order(crust, topping, size, number) {
       var selectedCrust = $("select#crust").val();
       var selectedTopping = $("select#topping").val();
       var selectedSize = $("select#size").val();
-      var selectedNumber =$("select#nbr").val();
+      var selectedNumber =$("input#nbr").val();
+      var selectedDelivery = $("select#delivery").val();
+      var newOrder = new Order(selectedCrust, selectedTopping, selectedSize, selectedNumber, selectedDelivery);
+     
+      $("ul#orders").append("<li><span class='order'>" + newOrder.delivery + "</span></li>");
+
+      $("select#crust").val();
+      $("select#topping").val();
+      $("select#size").val();
+      $("input#nbr").val();
+      $("select#delivery").val();
+    $(".order").last().click(function() {
+      $("#show-order").show();
+      $("#show-order h2").text(newOrder.crust);
+      $(".crust").text(newOrder.crust);
+      $(".topping").text(newOrder.topping);
+      $(".size").text(newOrder.size);
+      $(".number").text(newOrder.number);
+      $(".delivery").text(newOrder.delivery);
+    });
+});
+  });
 
 $(document).ready(function() {
     $("#add-order").click(function() {
-      $("#new-order").append('<div class="new-address">' + '<label for="crust">Select the Crust</label>' +     '<select class="form-control" id="crust">' + 
+      $("#new-order").append('<div class="new-order">' + '<label for="crust">Select the Crust</label>' +     '<select class="form-control" id="crust">' + 
                '<option selected>choose...</option>' +
                 '<option value="crispy">Crispy     @1,500rwf</option>' +
                 '<option value="stuffed">Stuffed     @2,000rwf</option>' +

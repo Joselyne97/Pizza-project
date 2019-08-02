@@ -74,4 +74,15 @@ h1{
 .btn-primary{
     margin-left: 200px;
 }
+#show-order {
+    display: none;
+}
+.order {
+    cursor: pointer;
+    color:greenyellow;
+  }
+  
+  .order:hover {
+    text-decoration: blueviolet;
+  }  
 
