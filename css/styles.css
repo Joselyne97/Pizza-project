@@ -71,11 +71,20 @@ h1{
     margin-left: 200px;
 
 }
-.btn-primary{
+.btn{
     margin-left: 200px;
+    color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
 }
+.btn:hover {
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc;
+  }
 #show-order {
     display: none;
+    margin-left: 300px;
 }
 .order {
     cursor: pointer;
@@ -85,4 +94,7 @@ h1{
   .order:hover {
     text-decoration: blueviolet;
   }  
+  .orders {
+    margin-left: 100px;
+  }
 

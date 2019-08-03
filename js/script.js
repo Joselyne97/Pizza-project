@@ -19,18 +19,265 @@ function Order(crust, topping, size, number, delivery) {
       var selectedSize = $("select#size").val();
       var selectedNumber =$("input#nbr").val();
       var selectedDelivery = $("select#delivery").val();
-      var newOrder = new Order(selectedCrust, selectedTopping, selectedSize, selectedNumber, selectedDelivery);
-     
-      $("ul#orders").append("<li><span class='order'>" + newOrder.delivery + "</span></li>");
+      var newOrder = new Order(selectedCrust, selectedTopping, selectedSize, selectedNumber, selectedDelivery, total);
+
+      var cost, totalCost;
+       if (selectedTopping === "chicken") {
+       if (selectedSize === "large"){
+           cost = 5000;
+           if (selectedCrust === "crispy") {
+               totalCost = (cost * selectedNumber) + 1500;
+           }
+          else if (selectedCrust === "stuffed") {
+             totalCost = (cost * selectedNumber) + 2000;
+           }
+           else if (selectedCrust === "gluten-free") {
+             totalCost = (cost * selectedNumber) + 2500;
+           }
+        }
+          else if (selectedSize === "medium") {
+            cost = 3000;
+            if (selectedCrust === "crispy"){
+              totalCost = (cost * selectedNumber) + 1500;
+            }
+            else if (selectedCrust === "stuffed") {
+              totalCost = (cost * selectedNumber) + 2000;
+            }
+            else if (selectedCrust === "gluten-free") {
+              totalCost = (cost * selectedNumber) + 2500;
+            }
+        }
+        else if (selectedSize === "small") {
+          cost = 1000;
+          if (selectedCrust === "crispy"){
+            totalCost = (cost * selectedNumber) + 1500;
+          }
+          else if (selectedCrust === "stuffed") {
+            totalCost = (cost * selectedNumber) + 2000;
+          }
+          else if (selectedCrust === "gluten-free") {
+            totalCost = (cost * selectedNumber) + 2500;
+          }
+      }
+
+      }
+             //extra-cheese
+      else if (selectedTopping === "extra-cheese") {
+        if (selectedSize === "large"){
+            cost = 5000;
+            if (selectedCrust === "crispy") {
+                totalCost = (cost * selectedNumber) + 1500;
+            }
+           else if (selectedCrust === "stuffed") {
+              totalCost = (cost * selectedNumber) + 2000;
+            }
+            else if (selectedCrust === "gluten-free") {
+              totalCost = (cost * selectedNumber) + 2500;
+            }
+         }
+           else if (selectedSize === "medium") {
+             cost = 3000;
+             if (selectedCrust === "crispy"){
+               totalCost = (cost * selectedNumber) + 1500;
+             }
+             else if (selectedCrust === "stuffed") {
+               totalCost = (cost * selectedNumber) + 2000;
+             }
+             else if (selectedCrust === "gluten-free") {
+               totalCost = (cost * selectedNumber) + 2500;
+             }
+         }
+         else if (selectedSize === "small") {
+           cost = 1000;
+           if (selectedCrust === "crispy"){
+             totalCost = (cost * selectedNumber) + 1500;
+           }
+           else if (selectedCrust === "stuffed") {
+             totalCost = (cost * selectedNumber) + 2000;
+           }
+           else if (selectedCrust === "gluten-free") {
+             totalCost = (cost * selectedNumber) + 2500;
+           }
+       }
+ 
+       }
+       //mushrooms
+      
+       else if (selectedTopping === "mushrooms") {
+        if (selectedSize === "large"){
+            cost = 5000;
+            if (selectedCrust === "crispy") {
+                totalCost = (cost * selectedNumber) + 1500;
+            }
+           else if (selectedCrust === "stuffed") {
+              totalCost = (cost * selectedNumber) + 2000;
+            }
+            else if (selectedCrust === "gluten-free") {
+              totalCost = (cost * selectedNumber) + 2500;
+            }
+         }
+           else if (selectedSize === "medium") {
+             cost = 3000;
+             if (selectedCrust === "crispy"){
+               totalCost = (cost * selectedNumber) + 1500;
+             }
+             else if (selectedCrust === "stuffed") {
+               totalCost = (cost * selectedNumber) + 2000;
+             }
+             else if (selectedCrust === "gluten-free") {
+               totalCost = (cost * selectedNumber) + 2500;
+             }
+         }
+         else if (selectedSize === "small") {
+           cost = 1000;
+           if (selectedCrust === "crispy"){
+             totalCost = (cost * selectedNumber) + 1500;
+           }
+           else if (selectedCrust === "stuffed") {
+             totalCost = (cost * selectedNumber) + 2000;
+           }
+           else if (selectedCrust === "gluten-free") {
+             totalCost = (cost * selectedNumber) + 2500;
+           }
+       }
+ 
+       }
+       //onions
+
+       else if (selectedTopping === "onions") {
+        if (selectedSize === "large"){
+            cost = 5000;
+            if (selectedCrust === "crispy") {
+                totalCost = (cost * selectedNumber) + 1500;
+            }
+           else if (selectedCrust === "stuffed") {
+              totalCost = (cost * selectedNumber) + 2000;
+            }
+            else if (selectedCrust === "gluten-free") {
+              totalCost = (cost * selectedNumber) + 2500;
+            }
+         }
+           else if (selectedSize === "medium") {
+             cost = 3000;
+             if (selectedCrust === "crispy"){
+               totalCost = (cost * selectedNumber) + 1500;
+             }
+             else if (selectedCrust === "stuffed") {
+               totalCost = (cost * selectedNumber) + 2000;
+             }
+             else if (selectedCrust === "gluten-free") {
+               totalCost = (cost * selectedNumber) + 2500;
+             }
+         }
+         else if (selectedSize === "small") {
+           cost = 1000;
+           if (selectedCrust === "crispy"){
+             totalCost = (cost * selectedNumber) + 1500;
+           }
+           else if (selectedCrust === "stuffed") {
+             totalCost = (cost * selectedNumber) + 2000;
+           }
+           else if (selectedCrust === "gluten-free") {
+             totalCost = (cost * selectedNumber) + 2500;
+           }
+       }
+ 
+       }
+              //peperoni
+
+       else if (selectedTopping === "peperoni") {
+        if (selectedSize === "large"){
+            cost = 5000;
+            if (selectedCrust === "crispy") {
+                totalCost = (cost * selectedNumber) + 1500;
+            }
+           else if (selectedCrust === "stuffed") {
+              totalCost = (cost * selectedNumber) + 2000;
+            }
+            else if (selectedCrust === "gluten-free") {
+              totalCost = (cost * selectedNumber) + 2500;
+            }
+         }
+           else if (selectedSize === "medium") {
+             cost = 3000;
+             if (selectedCrust === "crispy"){
+               totalCost = (cost * selectedNumber) + 1500;
+             }
+             else if (selectedCrust === "stuffed") {
+               totalCost = (cost * selectedNumber) + 2000;
+             }
+             else if (selectedCrust === "gluten-free") {
+               totalCost = (cost * selectedNumber) + 2500;
+             }
+         }
+         else if (selectedSize === "small") {
+           cost = 1000;
+           if (selectedCrust === "crispy"){
+             totalCost = (cost * selectedNumber) + 1500;
+           }
+           else if (selectedCrust === "stuffed") {
+             totalCost = (cost * selectedNumber) + 2000;
+           }
+           else if (selectedCrust === "gluten-free") {
+             totalCost = (cost * selectedNumber) + 2500;
+           }
+       }
+ 
+       }
+
+       //vegetable 
+
+       else if (selectedTopping === "vegetables") { 
+         price = 2000;
+        if (selectedSize === "large"){
+            cost = 5000;
+            if (selectedCrust === "crispy") {
+                totalCost = (cost * selectedNumber) + 1500;
+            }
+           else if (selectedCrust === "stuffed") {
+              totalCost = (cost * selectedNumber) + 2000;
+            }
+            else if (selectedCrust === "gluten-free") {
+              totalCost = (cost * selectedNumber) + 2500;
+            }
+         }
+           else if (selectedSize === "medium") {
+             cost = 3000;
+             if (selectedCrust === "crispy"){
+               totalCost = (cost * selectedNumber) + 1500;
+             }
+             else if (selectedCrust === "stuffed") {
+               totalCost = (cost * selectedNumber) + 2000;
+             }
+             else if (selectedCrust === "gluten-free") {
+               totalCost = (cost * selectedNumber) + 2500;
+             }
+         }
+         else if (selectedSize === "small") {
+           cost = 1000;
+           if (selectedCrust === "crispy"){
+             totalCost = (cost * selectedNumber) + 1500;
+           }
+           else if (selectedCrust === "stuffed") {
+             totalCost = (cost * selectedNumber) + 2000;
+           }
+           else if (selectedCrust === "gluten-free") {
+             totalCost = (cost * selectedNumber) + 2500;
+           }
+       }
+ 
+       }
+      
+      // $("ul#orders").append("<li><span class='order'>" + newOrder.delivery + "</span></li>");
 
       $("select#crust").val();
       $("select#topping").val();
       $("select#size").val();
       $("input#nbr").val();
       $("select#delivery").val();
-    $(".order").last().click(function() {
+    $(".btn").last().click(function() {
       $("#show-order").show();
-      $("#show-order h2").text(newOrder.delivery);
+      // $("#show-order h2").text(newOrder.delivery);
       $(".crust").text(newOrder.crust);
       $(".topping").text(newOrder.topping);
       $(".size").text(newOrder.size);
@@ -40,38 +287,3 @@ function Order(crust, topping, size, number, delivery) {
 });
   });
 
-$(document).ready(function() {
-    $("#add-order").click(function() {
-      $("#new-order").append('<div class="new-order">' + '<label for="crust">Select the Crust</label>' +     '<select class="form-control" id="crust">' + 
-               '<option selected>choose...</option>' +
-                '<option value="crispy">Crispy     @1,500rwf</option>' +
-                '<option value="stuffed">Stuffed     @2,000rwf</option>' +
-                '<option value="gluten-free"> Gluten-free     @2,500rwf</option>' +
-              '</select><br><br>' +
-  '<label for="topping">Select the pizza topping(s)</label>' +
-
-      '<select class="form-control" id="topping">' +
-               '<option selected>choose...</option>'+
-                '<option value="chicken">Chicken     @3,000rwf</option>' +
-                '<option value="extra-cheese">Extra-cheese     @2,000rwf</option>' +
-                '<option value="mushrooms">Mushrooms&olive     @1,000rwf</option>' +
-                '<option value="onions">Onions     @1,000rwf</option>' +
-                '<option value="peperoni">Peperoni     @2,000rwf</option>' +
-                '<option value="vegetables">Vegetables     @2,000rwf</option>' +
-              '</select>' + '<br>' + '<br>' +
-          
-      '<label for="size">Select the pizza size</label>' +
-
-      '<select class="form-control" id="size">' +
-               '<option selected>choose...</option>' +
-                '<option value="large">Large  @5,000rwf</option>' +
-                '<option value="medium">Medium  @3,000rwf</option>' +
-                '<option value="small">Small  @1,000rwf</option>' +
-              '</select>' + '<br>' + '<br>' +
-          
-              '<label for="nbr">Select the number of pizza you want</label>' +
-              '<input type="number" class="form-control" id="nbr" min="1">' + '<br>' + '<br>' );
-
-    });
-    
-});

@@ -137,29 +137,30 @@
                             <select class="form-control" id="delivery">
                                      <option selected>choose...</option>
                                       <option value="delivery">I prefer Deliverance</option>
-                                      <option value="not">I will Pick pizza(s)!</option>
+                                      <option value="pick-up">I will Pick pizza(s)!</option>
                             </select><br><br>
 
                     </div>
                 </div>
-                                    <span class="btn btn-primary" id="add-order">Another order</span><br><br>
-                                    <button type="submit" class="btn btn-primary">Order</button><br><br><br>
+                                    <!-- <span class="btn btn-primary" id="add-order">Another order</span><br><br> -->
+                                    
+                                    <button type="submit" class="btn">Order</button>
+                                <br><br><br>
                             </form>
-                            <h2>What you ordered:</h2>
+                            <h2 class="orders">What you ordered with the price:</h2>
                             <ul id="orders">
                   
                             </ul>
          </div>
      </div><br><br><br>
-     <div class="col-md-6">
+     <div class="col-md-12">
             <div id="show-order">
-              <h2>What you have ordered are with the total price:</h2>
               <p>Crust: <span class="crust"></span></p>
               <p>Topping(s) of pizza: <span class="topping"></span></p>
               <p>Size of pizza: <span class="size"></span></p>
               <p>Number of pizza(s): <span class="number"></span></p>
               <p>Delivery: <span class="delivery"></span></p>
-              <p>Second order:</p>
+              <p>Total price:</p>
               <ul id="order2">
 
               </ul>
