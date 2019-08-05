@@ -1,14 +1,13 @@
-function Order(crust, topping, size, number, delivery, totalCost) {
+function Order(crust, topping, size, number, totalCost) {
     this.crust = crust;
     this.topping = topping;
     this.size = size;
     this.number = number;
-    this.delivery = delivery;
     this.totalCost = totalCost;
   }
   
   Order.prototype.fullOrder = function(){
-      return this.crust + " " + this.topping + " " + " " + this.size + " " + this.number + " "+ this.delivery + " " + this.totalCost;
+      return this.crust + " " + this.topping + " " + " " + this.size + " " + this.number + " " + this.totalCost;
   }
 
   $(document).ready(function() {
@@ -24,7 +23,7 @@ $(".btn").click(function() {
 
   
 
-  var cost, total;
+  var cost, totalCost;
        switch (sizes) {
          case sizes = "large" :
              cost = 5000;
@@ -86,9 +85,8 @@ $(".btn").click(function() {
       };
  console.log(totalCost);
 
-      var selectedDelivery = $("select#delivery").val();
       var totalCost;
- var newOrder = new Order(crusts, toppings, sizes, numbers, selectedDelivery, totalCost);
+ var newOrder = new Order(crusts, toppings, sizes, numbers, totalCost);
  
   $("#show-order").show();
   // $("#show-order h2").text(newOrder.delivery);
@@ -96,7 +94,6 @@ $(".btn").click(function() {
   $(".topping").text(newOrder.topping);
   $(".size").text(newOrder.size);
   $(".number").text(newOrder.number);
-  $(".delivery").text(newOrder.delivery);
   $(".totalCost").text(newOrder.totalCost);
 
 
