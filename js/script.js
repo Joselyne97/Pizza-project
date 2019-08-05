@@ -11,7 +11,7 @@ function Order(crust, topping, size, number, totalCost) {
   }
   document.getElementById("deli").addEventListener("click", function () {
     prompt("enter where you are located");
-    alert("Thank you, your order will be delivered to your location!");
+    alert("Your order will be delivered to your location for only 2,000rwf; Thank you!");
    });
   $(document).ready(function() {
     $("form#ordering").submit(function(event) {
