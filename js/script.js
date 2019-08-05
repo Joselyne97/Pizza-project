@@ -9,7 +9,10 @@ function Order(crust, topping, size, number, totalCost) {
   Order.prototype.fullOrder = function(){
       return this.crust + " " + this.topping + " " + " " + this.size + " " + this.number + " " + this.totalCost;
   }
-
+  document.getElementById("deli").addEventListener("click", function () {
+    prompt("enter where you are located");
+    alert("Thank you, your order will be delivered to your location!");
+   });
   $(document).ready(function() {
     $("form#ordering").submit(function(event) {
       event.preventDefault();
@@ -28,13 +31,13 @@ $(".btn").click(function() {
          case sizes = "large" :
              cost = 5000;
          if (crusts === "crispy") {
-             totalCost = (cost * numbers) + 1500;
+             totalCost = cost + 1500;
          }
         else if (crusts === "stuffed") {
-           totalCost = (cost * numbers) + 2000 ;
+           totalCost = cost + 2000 ;
          }
          else if (crusts === "gluten-free") {
-           totalCost = (cost * numbers) + 2500;
+           totalCost = cost + 2500;
          }
          break;
          case sizes ="medium" :
@@ -89,7 +92,6 @@ $(".btn").click(function() {
  var newOrder = new Order(crusts, toppings, sizes, numbers, totalCost);
  
   $("#show-order").show();
-  // $("#show-order h2").text(newOrder.delivery);
   $(".crust").text(newOrder.crust);
   $(".topping").text(newOrder.topping);
   $(".size").text(newOrder.size);
