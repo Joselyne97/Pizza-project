@@ -100,4 +100,11 @@ h1{
   #delivery{
     margin-left: 200px;
   }
+  .contacts{
+      margin-left: 200px;
+  }
+  .contacts h2{
+      color: #800080;
+      margin-left: 150px;
+  }
 

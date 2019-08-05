@@ -33,7 +33,7 @@ Joselyne MPAYIMANA
  
  ## The link to live site on GitHub Pages is :
  
-
+https://joselyne97.github.io/Pizza-project/
 
  ## Copyright and license information:
 
