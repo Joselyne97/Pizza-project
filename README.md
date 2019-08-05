@@ -15,7 +15,7 @@ Joselyne MPAYIMANA
 
 ## Project description:
 
- We were required to create a web application in order to widen our customer base, where our customers order different sizes of pizza(s) with one or more toppings and what kind of crust they want And it display the total price after clicking on order button.
+ We were required to create a web application in order to widen our customer base, where our customers order different sizes of pizza(s) with one or more toppings and what kind of crust they want And it display the total price after clicking on order button. If they want the pizza to be deliveried, they have to click on delivery button and they will be prompted to enter where the delivery should be made.
 
 
 
